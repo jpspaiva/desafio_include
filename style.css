@@ -1,0 +1,275 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #663366;
+    color: #fff;
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Navegação */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(38, 38, 38, 0.8); /* Fundo transparente */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s, background 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    color: #663366;
+    background: #ffffff;
+}
+
+/* Header Content */
+.container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 40px; /* Espaço entre a imagem e o texto */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+#foto-pessoal-1 {
+    width: 400px; /* Ajuste para responsividade */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid rgb(172, 116, 12);
+    border-radius: 50%; /* Altera para um círculo */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+}
+
+.container .text {
+    max-width: 500px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: rgb(172, 116, 12);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: rgb(0, 0, 0);
+}
+
+/* Section Styling */
+section {
+    padding: 60px 60px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #663366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: #663366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Include Engenharia */
+#include .container {
+    display: flex; /* Define o layout como flexbox */
+    justify-content: space-between; /* Coloca espaço entre os itens */
+}
+
+#include h2{
+    text-align: center;
+    display: block; 
+    margin-bottom: 40px;
+}
+
+.sobre-include {
+    display: block;
+    justify-content: flex-start;
+    width: 550px;
+    margin-left: 150px;
+    text-align: justify;
+}
+
+.serviços {
+    margin-top: 20px; /* Espaço acima da seção serviços */
+    width: 450px;
+    justify-self: center;
+    margin-right: 150px;
+    margin-bottom: 90px;
+}
+
+.serviços ul {
+    list-style: none;
+    display: block;
+    width: 450px;
+    justify-self: center;
+}
+
+.serviços ul li {
+    background: #e6e6fa;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.serviços ul li:hover {
+    transform: scale(1.1); /* Aumenta levemente o ícone ao passar o mouse */
+}
+
+/* Perfil profissional*/
+#perfil-pessoal h3{
+    text-align: left;
+}
+
+.apresentacao {
+    width: 1000px;
+    text-align: justify;
+}
+
+.motivacao-include {
+    width: 1000px;
+    text-align: justify;
+}
+
+/* Perfil profissional*/
+#perfil-profissional .container {
+    display: flex; /* Define o layout como flexbox */
+}
+
+#perfil-profissional h2{
+    text-align: center;
+    display: block; 
+    margin-bottom: 20px;
+}
+
+#perfil-profissional h3{
+    text-align: left;
+    display: block; 
+    margin-bottom: 20px;
+}
+
+.historico-academico {
+    display: block;
+    justify-content:center;
+    width: 1000px;
+    text-align: justify;
+}
+
+.historico-profissinal {
+    display: block;
+    justify-content: flex-end;
+    width: 1000px;
+    text-align: justify;
+}
+
+.historico-profissinal ul li {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 1.4rem;
+}
+
+/* Footer */
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    background: #663366;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+footer .social-media {
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 15px; /* Espaçamento entre os ícones */
+    margin-bottom: 10px; /* Espaço abaixo dos ícones */
+}
+
+footer .social-media a {
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+footer .social-media img {
+    width: 40px; /* Define a largura dos ícones */
+    height: auto; /* Mantém a proporção dos ícones */
+    transition: transform 0.3s ease; /* Efeito de transição suave */
+}
+
+footer .social-media img:hover {
+    transform: scale(1.2); /* Aumenta levemente o ícone ao passar o mouse */
+}
+
+footer p {
+    margin: 0; /* Remove margens desnecessárias */
+    font-size: 0.9rem; /* Tamanho do texto menor para o copyright */
+    color: #888; /* Tom mais claro para o texto */
+}
